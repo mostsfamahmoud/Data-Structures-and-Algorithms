@@ -1,0 +1,33 @@
+//============================================================================
+// Name        : Question6.cpp
+// Author      : Mostafa
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+#define SIZE 7
+
+/*
+6- Write a program that recursively finds the maximum value of an array of integers
+*/
+
+int find_max(int *arr,int size)
+{
+	if (size == 1)
+		return arr[0];
+
+	return max(arr[size - 1],find_max(arr, size - 1));
+}
+
+int main()
+{
+	int arr[SIZE] = {1,9,-3,12,4,25,-6};
+
+	cout<<"Max value of the array:" << find_max(arr, SIZE) << endl;
+
+	return 0;
+}

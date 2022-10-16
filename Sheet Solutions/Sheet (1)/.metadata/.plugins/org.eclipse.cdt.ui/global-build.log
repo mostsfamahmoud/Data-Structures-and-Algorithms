@@ -1,0 +1,567 @@
+12:35:42 **** Rebuild of configuration Debug for project Question2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Question2.o" "..\\src\\Question2.cpp" 
+g++ -o Question2.exe "src\\Question2.o" 
+Info: Nothing to build for Question2
+13:10:06 **** Incremental Build of configuration Debug for project Question2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Question2.o" "..\\src\\Question2.cpp" 
+g++ -o Question2.exe "src\\Question2.o" 
+Info: Nothing to build for Question2
+13:11:51 **** Incremental Build of configuration Debug for project Question2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Question2.o" "..\\src\\Question2.cpp" 
+..\src\Question2.cpp: In function 'int main()':
+..\src\Question2.cpp:64:20: error: no match for 'operator>>' (operand types are 'std::istream' {aka 'std::basic_istream<char>'} and 'int*')
+   64 |                 cin>> &arr[i];
+      |                 ~~~^~ ~~~~~~~
+      |                 |     |
+      |                 |     int*
+      |                 std::istream {aka std::basic_istream<char>}
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question2.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:168:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  168 |       operator>>(bool& __n)
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:168:7: note:   conversion of argument 1 would be ill-formed:
+..\src\Question2.cpp:64:23: error: cannot bind non-const lvalue reference of type 'bool&' to a value of type 'int*'
+   64 |                 cin>> &arr[i];
+      |                       ^~~~~~~
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question2.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:172:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]' (near match)
+  172 |       operator>>(short& __n);
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:172:7: note:   conversion of argument 1 would be ill-formed:
+..\src\Question2.cpp:64:23: error: invalid conversion from 'int*' to 'short int' [-fpermissive]
+   64 |                 cin>> &arr[i];
+      |                       ^~~~~~~
+      |                       |
+      |                       int*
+..\src\Question2.cpp:64:23: error: cannot bind rvalue '(short int)(& arr[i])' to 'short int&'
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question2.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:175:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  175 |       operator>>(unsigned short& __n)
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:175:7: note:   conversion of argument 1 would be ill-formed:
+..\src\Question2.cpp:64:23: error: invalid conversion from 'int*' to 'short unsigned int' [-fpermissive]
+   64 |                 cin>> &arr[i];
+      |                       ^~~~~~~
+      |                       |
+      |                       int*
+..\src\Question2.cpp:64:23: error: cannot bind rvalue '(short unsigned int)(& arr[i])' to 'short unsigned int&'
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question2.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:179:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]' (near match)
+  179 |       operator>>(int& __n);
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:179:7: note:   conversion of argument 1 would be ill-formed:
+..\src\Question2.cpp:64:23: error: invalid conversion from 'int*' to 'int' [-fpermissive]
+   64 |                 cin>> &arr[i];
+      |                       ^~~~~~~
+      |                       |
+      |                       int*
+..\src\Question2.cpp:64:23: error: cannot bind rvalue '(int)(& arr[i])' to 'int&'
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question2.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:182:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  182 |       operator>>(unsigned int& __n)
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:182:7: note:   conversion of argument 1 would be ill-formed:
+..\src\Question2.cpp:64:23: error: invalid conversion from 'int*' to 'unsigned int' [-fpermissive]
+   64 |                 cin>> &arr[i];
+      |                       ^~~~~~~
+      |                       |
+      |                       int*
+..\src\Question2.cpp:64:23: error: cannot bind rvalue '(unsigned int)(& arr[i])' to 'unsigned int&'
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question2.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:186:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  186 |       operator>>(long& __n)
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:186:7: note:   conversion of argument 1 would be ill-formed:
+..\src\Question2.cpp:64:23: error: invalid conversion from 'int*' to 'long int' [-fpermissive]
+   64 |                 cin>> &arr[i];
+      |                       ^~~~~~~
+      |                       |
+      |                       int*
+..\src\Question2.cpp:64:23: error: cannot bind rvalue '(long int)(& arr[i])' to 'long int&'
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question2.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:190:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  190 |       operator>>(unsigned long& __n)
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:190:7: note:   conversion of argument 1 would be ill-formed:
+..\src\Question2.cpp:64:23: error: invalid conversion from 'int*' to 'long unsigned int' [-fpermissive]
+   64 |                 cin>> &arr[i];
+      |                       ^~~~~~~
+      |                       |
+      |                       int*
+..\src\Question2.cpp:64:23: error: cannot bind rvalue '(long unsigned int)(& arr[i])' to 'long unsigned int&'
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question2.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:195:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  195 |       operator>>(long long& __n)
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:195:7: note:   conversion of argument 1 would be ill-formed:
+..\src\Question2.cpp:64:23: error: invalid conversion from 'int*' to 'long long int' [-fpermissive]
+   64 |                 cin>> &arr[i];
+      |                       ^~~~~~~
+      |                       |
+      |                       int*
+..\src\Question2.cpp:64:23: error: cannot bind rvalue '(long long int)(& arr[i])' to 'long long int&'
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question2.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:199:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  199 |       operator>>(unsigned long long& __n)
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:199:7: note:   conversion of argument 1 would be ill-formed:
+..\src\Question2.cpp:64:23: error: invalid conversion from 'int*' to 'long long unsigned int' [-fpermissive]
+   64 |                 cin>> &arr[i];
+      |                       ^~~~~~~
+      |                       |
+      |                       int*
+..\src\Question2.cpp:64:23: error: cannot bind rvalue '(long long unsigned int)(& arr[i])' to 'long long unsigned int&'
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question2.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:235:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  235 |       operator>>(void*& __p)
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:235:7: note:   conversion of argument 1 would be ill-formed:
+..\src\Question2.cpp:64:23: error: cannot bind non-const lvalue reference of type 'void*&' to an rvalue of type 'void*'
+   64 |                 cin>> &arr[i];
+      |                       ^~~~~~~
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question2.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:120:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:120:36: note:   no known conversion for argument 1 from 'int*' to 'std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&)' {aka 'std::basic_istream<char>& (*)(std::basic_istream<char>&)'}
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:124:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]'
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:124:32: note:   no known conversion for argument 1 from 'int*' to 'std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'}
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:131:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:131:30: note:   no known conversion for argument 1 from 'int*' to 'std::ios_base& (*)(std::ios_base&)'
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:214:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  214 |       operator>>(float& __f)
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:214:25: note:   no known conversion for argument 1 from 'int*' to 'float&'
+  214 |       operator>>(float& __f)
+      |                  ~~~~~~~^~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:218:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  218 |       operator>>(double& __f)
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:218:26: note:   no known conversion for argument 1 from 'int*' to 'double&'
+  218 |       operator>>(double& __f)
+      |                  ~~~~~~~~^~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:222:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  222 |       operator>>(long double& __f)
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:222:31: note:   no known conversion for argument 1 from 'int*' to 'long double&'
+  222 |       operator>>(long double& __f)
+      |                  ~~~~~~~~~~~~~^~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:259:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]'
+  259 |       operator>>(__streambuf_type* __sb);
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:259:36: note:   no known conversion for argument 1 from 'int*' to 'std::basic_istream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'}
+  259 |       operator>>(__streambuf_type* __sb);
+      |                  ~~~~~~~~~~~~~~~~~~^~~~
+In file included from C:/msys64/mingw64/include/c++/11.2.0/string:56,
+                 from C:/msys64/mingw64/include/c++/11.2.0/bits/locale_classes.h:40,
+                 from C:/msys64/mingw64/include/c++/11.2.0/bits/ios_base.h:41,
+                 from C:/msys64/mingw64/include/c++/11.2.0/ios:42,
+                 from C:/msys64/mingw64/include/c++/11.2.0/ostream:38,
+                 from C:/msys64/mingw64/include/c++/11.2.0/iostream:39,
+                 from ..\src\Question2.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/bits/basic_string.tcc:1485:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 1485 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/bits/basic_string.tcc:1485:5: note:   template argument deduction/substitution failed:
+..\src\Question2.cpp:64:29: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'int*'
+   64 |                 cin>> &arr[i];
+      |                             ^
+In file included from C:/msys64/mingw64/include/c++/11.2.0/istream:995,
+                 from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question2.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/bits/istream.tcc:958:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)'
+  958 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+      |     ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/bits/istream.tcc:958:5: note:   template argument deduction/substitution failed:
+..\src\Question2.cpp:64:29: note:   deduced conflicting types for parameter '_CharT' ('char' and 'int*')
+   64 |                 cin>> &arr[i];
+      |                             ^
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question2.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:756:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)'
+  756 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+      |     ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:756:5: note:   template argument deduction/substitution failed:
+..\src\Question2.cpp:64:23: note:   cannot convert '& arr[i]' (type 'int*') to type 'unsigned char&'
+   64 |                 cin>> &arr[i];
+      |                       ^~~~~~~
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question2.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:761:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)'
+  761 |     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+      |     ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:761:5: note:   template argument deduction/substitution failed:
+..\src\Question2.cpp:64:23: note:   cannot convert '& arr[i]' (type 'int*') to type 'signed char&'
+   64 |                 cin>> &arr[i];
+      |                       ^~~~~~~
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question2.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:803:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT*)'
+  803 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+      |     ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:803:5: note:   template argument deduction/substitution failed:
+..\src\Question2.cpp:64:29: note:   deduced conflicting types for parameter '_CharT' ('char' and 'int')
+   64 |                 cin>> &arr[i];
+      |                             ^
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question2.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:825:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)'
+  825 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+      |     ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:825:5: note:   template argument deduction/substitution failed:
+..\src\Question2.cpp:64:23: note:   cannot convert '& arr[i]' (type 'int*') to type 'unsigned char*'
+   64 |                 cin>> &arr[i];
+      |                       ^~~~~~~
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question2.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:831:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)'
+  831 |     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+      |     ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:831:5: note:   template argument deduction/substitution failed:
+..\src\Question2.cpp:64:23: note:   cannot convert '& arr[i]' (type 'int*') to type 'signed char*'
+   64 |                 cin>> &arr[i];
+      |                       ^~~~~~~
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question2.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:985:5: note: candidate: 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&)'
+  985 |     operator>>(_Istream&& __is, _Tp&& __x)
+      |     ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:985:5: note:   template argument deduction/substitution failed:
+C:/msys64/mingw64/include/c++/11.2.0/istream: In substitution of 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_istream<char>&; _Tp = int*]':
+..\src\Question2.cpp:64:15:   required from here
+C:/msys64/mingw64/include/c++/11.2.0/istream:985:5: error: no type named 'type' in 'struct std::enable_if<false, void>'
+13:12:24 **** Incremental Build of configuration Debug for project Question2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Question2.o" "..\\src\\Question2.cpp" 
+g++ -o Question2.exe "src\\Question2.o" 
+13:12:58 **** Incremental Build of configuration Debug for project Question2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Question2.o" "..\\src\\Question2.cpp" 
+g++ -o Question2.exe "src\\Question2.o" 
+Info: Nothing to build for Question2
+13:14:53 **** Incremental Build of configuration Debug for project Question2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Question2.o" "..\\src\\Question2.cpp" 
+g++ -o Question2.exe "src\\Question2.o" 
+Info: Nothing to build for Question2
+13:18:34 **** Incremental Build of configuration Debug for project Question2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Question2.o" "..\\src\\Question2.cpp" 
+g++ -o Question2.exe "src\\Question2.o" 
+13:18:51 **** Incremental Build of configuration Debug for project Question2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Question2.o" "..\\src\\Question2.cpp" 
+g++ -o Question2.exe "src\\Question2.o" 
+13:18:59 **** Incremental Build of configuration Debug for project Question2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Question2.o" "..\\src\\Question2.cpp" 
+g++ -o Question2.exe "src\\Question2.o" 
+Info: Nothing to build for Question2
+13:47:32 **** Rebuild of configuration Debug for project Question4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Question4.o" "..\\src\\Question4.cpp" 
+..\src\Question4.cpp: In function 'int main()':
+..\src\Question4.cpp:28:12: error: no match for 'operator>>' (operand types are 'std::istream' {aka 'std::basic_istream<char>'} and 'int*')
+   28 |         cin>> &arrLength;
+      |         ~~~^~ ~~~~~~~~~~
+      |         |     |
+      |         |     int*
+      |         std::istream {aka std::basic_istream<char>}
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question4.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:168:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  168 |       operator>>(bool& __n)
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:168:7: note:   conversion of argument 1 would be ill-formed:
+..\src\Question4.cpp:28:15: warning: the address of 'arrLength' will never be NULL [-Waddress]
+   28 |         cin>> &arrLength;
+      |               ^~~~~~~~~~
+..\src\Question4.cpp:28:15: error: cannot bind non-const lvalue reference of type 'bool&' to a value of type 'int*'
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question4.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:172:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]' (near match)
+  172 |       operator>>(short& __n);
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:172:7: note:   conversion of argument 1 would be ill-formed:
+..\src\Question4.cpp:28:15: error: invalid conversion from 'int*' to 'short int' [-fpermissive]
+   28 |         cin>> &arrLength;
+      |               ^~~~~~~~~~
+      |               |
+      |               int*
+..\src\Question4.cpp:28:15: error: cannot bind rvalue '(short int)(& arrLength)' to 'short int&'
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question4.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:175:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  175 |       operator>>(unsigned short& __n)
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:175:7: note:   conversion of argument 1 would be ill-formed:
+..\src\Question4.cpp:28:15: error: invalid conversion from 'int*' to 'short unsigned int' [-fpermissive]
+   28 |         cin>> &arrLength;
+      |               ^~~~~~~~~~
+      |               |
+      |               int*
+..\src\Question4.cpp:28:15: error: cannot bind rvalue '(short unsigned int)(& arrLength)' to 'short unsigned int&'
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question4.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:179:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]' (near match)
+  179 |       operator>>(int& __n);
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:179:7: note:   conversion of argument 1 would be ill-formed:
+..\src\Question4.cpp:28:15: error: invalid conversion from 'int*' to 'int' [-fpermissive]
+   28 |         cin>> &arrLength;
+      |               ^~~~~~~~~~
+      |               |
+      |               int*
+..\src\Question4.cpp:28:15: error: cannot bind rvalue '(int)(& arrLength)' to 'int&'
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question4.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:182:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  182 |       operator>>(unsigned int& __n)
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:182:7: note:   conversion of argument 1 would be ill-formed:
+..\src\Question4.cpp:28:15: error: invalid conversion from 'int*' to 'unsigned int' [-fpermissive]
+   28 |         cin>> &arrLength;
+      |               ^~~~~~~~~~
+      |               |
+      |               int*
+..\src\Question4.cpp:28:15: error: cannot bind rvalue '(unsigned int)(& arrLength)' to 'unsigned int&'
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question4.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:186:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  186 |       operator>>(long& __n)
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:186:7: note:   conversion of argument 1 would be ill-formed:
+..\src\Question4.cpp:28:15: error: invalid conversion from 'int*' to 'long int' [-fpermissive]
+   28 |         cin>> &arrLength;
+      |               ^~~~~~~~~~
+      |               |
+      |               int*
+..\src\Question4.cpp:28:15: error: cannot bind rvalue '(long int)(& arrLength)' to 'long int&'
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question4.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:190:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  190 |       operator>>(unsigned long& __n)
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:190:7: note:   conversion of argument 1 would be ill-formed:
+..\src\Question4.cpp:28:15: error: invalid conversion from 'int*' to 'long unsigned int' [-fpermissive]
+   28 |         cin>> &arrLength;
+      |               ^~~~~~~~~~
+      |               |
+      |               int*
+..\src\Question4.cpp:28:15: error: cannot bind rvalue '(long unsigned int)(& arrLength)' to 'long unsigned int&'
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question4.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:195:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  195 |       operator>>(long long& __n)
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:195:7: note:   conversion of argument 1 would be ill-formed:
+..\src\Question4.cpp:28:15: error: invalid conversion from 'int*' to 'long long int' [-fpermissive]
+   28 |         cin>> &arrLength;
+      |               ^~~~~~~~~~
+      |               |
+      |               int*
+..\src\Question4.cpp:28:15: error: cannot bind rvalue '(long long int)(& arrLength)' to 'long long int&'
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question4.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:199:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  199 |       operator>>(unsigned long long& __n)
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:199:7: note:   conversion of argument 1 would be ill-formed:
+..\src\Question4.cpp:28:15: error: invalid conversion from 'int*' to 'long long unsigned int' [-fpermissive]
+   28 |         cin>> &arrLength;
+      |               ^~~~~~~~~~
+      |               |
+      |               int*
+..\src\Question4.cpp:28:15: error: cannot bind rvalue '(long long unsigned int)(& arrLength)' to 'long long unsigned int&'
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question4.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:235:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]' (near match)
+  235 |       operator>>(void*& __p)
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:235:7: note:   conversion of argument 1 would be ill-formed:
+..\src\Question4.cpp:28:15: error: cannot bind non-const lvalue reference of type 'void*&' to an rvalue of type 'void*'
+   28 |         cin>> &arrLength;
+      |               ^~~~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question4.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:120:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:120:36: note:   no known conversion for argument 1 from 'int*' to 'std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&)' {aka 'std::basic_istream<char>& (*)(std::basic_istream<char>&)'}
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:124:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]'
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:124:32: note:   no known conversion for argument 1 from 'int*' to 'std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'}
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:131:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:131:30: note:   no known conversion for argument 1 from 'int*' to 'std::ios_base& (*)(std::ios_base&)'
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:214:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  214 |       operator>>(float& __f)
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:214:25: note:   no known conversion for argument 1 from 'int*' to 'float&'
+  214 |       operator>>(float& __f)
+      |                  ~~~~~~~^~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:218:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  218 |       operator>>(double& __f)
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:218:26: note:   no known conversion for argument 1 from 'int*' to 'double&'
+  218 |       operator>>(double& __f)
+      |                  ~~~~~~~~^~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:222:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  222 |       operator>>(long double& __f)
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:222:31: note:   no known conversion for argument 1 from 'int*' to 'long double&'
+  222 |       operator>>(long double& __f)
+      |                  ~~~~~~~~~~~~~^~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:259:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]'
+  259 |       operator>>(__streambuf_type* __sb);
+      |       ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:259:36: note:   no known conversion for argument 1 from 'int*' to 'std::basic_istream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'}
+  259 |       operator>>(__streambuf_type* __sb);
+      |                  ~~~~~~~~~~~~~~~~~~^~~~
+In file included from C:/msys64/mingw64/include/c++/11.2.0/string:56,
+                 from C:/msys64/mingw64/include/c++/11.2.0/bits/locale_classes.h:40,
+                 from C:/msys64/mingw64/include/c++/11.2.0/bits/ios_base.h:41,
+                 from C:/msys64/mingw64/include/c++/11.2.0/ios:42,
+                 from C:/msys64/mingw64/include/c++/11.2.0/ostream:38,
+                 from C:/msys64/mingw64/include/c++/11.2.0/iostream:39,
+                 from ..\src\Question4.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/bits/basic_string.tcc:1485:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 1485 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/bits/basic_string.tcc:1485:5: note:   template argument deduction/substitution failed:
+..\src\Question4.cpp:28:16: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'int*'
+   28 |         cin>> &arrLength;
+      |                ^~~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/11.2.0/istream:995,
+                 from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question4.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/bits/istream.tcc:958:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)'
+  958 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+      |     ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/bits/istream.tcc:958:5: note:   template argument deduction/substitution failed:
+..\src\Question4.cpp:28:16: note:   deduced conflicting types for parameter '_CharT' ('char' and 'int*')
+   28 |         cin>> &arrLength;
+      |                ^~~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question4.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:756:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)'
+  756 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+      |     ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:756:5: note:   template argument deduction/substitution failed:
+..\src\Question4.cpp:28:15: note:   cannot convert '& arrLength' (type 'int*') to type 'unsigned char&'
+   28 |         cin>> &arrLength;
+      |               ^~~~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question4.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:761:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)'
+  761 |     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+      |     ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:761:5: note:   template argument deduction/substitution failed:
+..\src\Question4.cpp:28:15: note:   cannot convert '& arrLength' (type 'int*') to type 'signed char&'
+   28 |         cin>> &arrLength;
+      |               ^~~~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question4.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:803:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT*)'
+  803 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+      |     ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:803:5: note:   template argument deduction/substitution failed:
+..\src\Question4.cpp:28:16: note:   deduced conflicting types for parameter '_CharT' ('char' and 'int')
+   28 |         cin>> &arrLength;
+      |                ^~~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question4.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:825:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)'
+  825 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+      |     ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:825:5: note:   template argument deduction/substitution failed:
+..\src\Question4.cpp:28:15: note:   cannot convert '& arrLength' (type 'int*') to type 'unsigned char*'
+   28 |         cin>> &arrLength;
+      |               ^~~~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question4.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:831:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)'
+  831 |     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+      |     ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:831:5: note:   template argument deduction/substitution failed:
+..\src\Question4.cpp:28:15: note:   cannot convert '& arrLength' (type 'int*') to type 'signed char*'
+   28 |         cin>> &arrLength;
+      |               ^~~~~~~~~~
+In file included from C:/msys64/mingw64/include/c++/11.2.0/iostream:40,
+                 from ..\src\Question4.cpp:9:
+C:/msys64/mingw64/include/c++/11.2.0/istream:985:5: note: candidate: 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&)'
+  985 |     operator>>(_Istream&& __is, _Tp&& __x)
+      |     ^~~~~~~~
+C:/msys64/mingw64/include/c++/11.2.0/istream:985:5: note:   template argument deduction/substitution failed:
+C:/msys64/mingw64/include/c++/11.2.0/istream: In substitution of 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_istream<char>&; _Tp = int*]':
+..\src\Question4.cpp:28:9:   required from here
+C:/msys64/mingw64/include/c++/11.2.0/istream:985:5: error: no type named 'type' in 'struct std::enable_if<false, void>'
+Info: Nothing to build for Question2
+13:47:46 **** Incremental Build of configuration Debug for project Question4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Question4.o" "..\\src\\Question4.cpp" 
+g++ -o Question4.exe "src\\Question4.o" 
+Info: Nothing to build for Question4
+Info: Nothing to build for Question2
+Info: Nothing to build for Question4
+14:48:16 **** Rebuild of configuration Debug for project Question5 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Question5.o" "..\\src\\Question5.cpp" 
+g++ -o Question5.exe "src\\Question5.o" 
+Info: Nothing to build for Question5
+Info: Nothing to build for Question2
+Info: Nothing to build for Question4
+Info: Nothing to build for Question5
+18:31:38 **** Rebuild of configuration Debug for project Question6 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Question6.o" "..\\src\\Question6.cpp" 
+g++ -o Question6.exe "src\\Question6.o" 
+18:31:40 **** Rebuild of configuration Debug for project Question7 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Question7.o" "..\\src\\Question7.cpp" 
+g++ -o Question7.exe "src\\Question7.o" 
+Info: Nothing to build for Question6
+18:48:17 **** Incremental Build of configuration Debug for project Question6 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Question6.o" "..\\src\\Question6.cpp" 
+g++ -o Question6.exe "src\\Question6.o" 
+19:46:39 **** Incremental Build of configuration Debug for project Question6 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Question6.o" "..\\src\\Question6.cpp" 
+g++ -o Question6.exe "src\\Question6.o" 
+19:46:46 **** Incremental Build of configuration Debug for project Question7 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Question7.o" "..\\src\\Question7.cpp" 
+g++ -o Question7.exe "src\\Question7.o" 
