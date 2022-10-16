@@ -1,7 +1,0 @@
-19:46:46 **** Incremental Build of configuration Debug for project Question7 ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Question7.o" "..\\src\\Question7.cpp" 
-g++ -o Question7.exe "src\\Question7.o" 
-
-19:46:47 Build Finished. 0 errors, 0 warnings. (took 716ms)
-
