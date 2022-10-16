@@ -4,6 +4,7 @@
 
 - [Online Lectures](https://youtube.com/playlist?list=PLxwbQuwnqw4dXLl_fWfjfn-zoFlvWUIpv)
 - [Online Tutorials & Labs](https://youtube.com/playlist?list=PLxwbQuwnqw4fyKgDiRz2fP_5pC17sk2Kw)
+- [Quick quizzes](https://forms.gle/zj9CUZAKg1xeptkQ8)
 
 ## EXTRA Content (Optional)
 
