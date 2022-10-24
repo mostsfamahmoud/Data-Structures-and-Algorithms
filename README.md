@@ -13,3 +13,4 @@
 
 ## Made Up Quizzes (Optional)
 - [Pointers & Dynamic Allocation Quiz](https://forms.gle/zj9CUZAKg1xeptkQ8)
+- [Linked List Quiz](https://forms.gle/JqH9rQw8nUBgH3Sc7)
