@@ -3,8 +3,8 @@
 ## OUR Content
 
 - [Live Recorded Tutorials [CSE 2024]](https://www.youtube.com/playlist?list=PLaL_BACw3AaGDbYpq62drcxXSs0Yi953M)
+- [Online Lectures [CSE 2024]](https://www.youtube.com/playlist?list=PLaL_BACw3AaELgPD82WGaMNIMUmvHVRcF)
 - [Online Lectures [CSE 2023]](https://youtube.com/playlist?list=PLxwbQuwnqw4dXLl_fWfjfn-zoFlvWUIpv)
-- [Online Tutorials & Labs [CSE 2023]](https://youtube.com/playlist?list=PLxwbQuwnqw4fyKgDiRz2fP_5pC17sk2Kw)
 
 ## EXTRA Content (Optional)
 
