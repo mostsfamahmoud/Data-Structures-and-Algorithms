@@ -10,6 +10,8 @@
 
 - [Data Structures In C](https://youtube.com/playlist?list=PLoK2Lr1miEm-5zCzKE8siQezj9rvQlnca)
 - [Data Structures In JAVA](https://youtube.com/playlist?list=PLCInYL3l2AajqOUW_2SwjWeMwf4vL4RSp)
+- [DS - the Ultimate Pack (Arabic)](https://www.youtube.com/playlist?list=PLufP1Ho9TwWQSmlrzxR-nFbamBtqZvXhY)
+- [PS - the Ultimate Pack (Arabic)](https://www.youtube.com/playlist?list=PLufP1Ho9TwWSfp9EX4Bojgy3_zQp9bhEG)
 
 ## Made Up Quizzes (Optional)
 - [Pointers & Dynamic Allocation Quiz](https://forms.gle/zj9CUZAKg1xeptkQ8)
